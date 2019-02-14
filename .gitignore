@@ -1,0 +1,8 @@
+bin/Debug
+bin/Release
+obj/Debug
+obj/Release
+lib\sllib\bin\Release
+lib\sllib\bin\Debug
+lib\sllib\obj\Release
+lib\sllib\obj\Debug

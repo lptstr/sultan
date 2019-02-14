@@ -1,0 +1,9 @@
+E:\Apps\Repos\lptstr\sultan\sllib\bin\ghfdf\netstandard2.0\sllib.deps.json
+E:\Apps\Repos\lptstr\sultan\sllib\bin\ghfdf\netstandard2.0\sllib.dll
+E:\Apps\Repos\lptstr\sultan\sllib\bin\ghfdf\netstandard2.0\sllib.pdb
+E:\Apps\Repos\lptstr\sultan\sllib\obj\ghfdf\netstandard2.0\sllib.csprojAssemblyReference.cache
+E:\Apps\Repos\lptstr\sultan\sllib\obj\ghfdf\netstandard2.0\sllib.csproj.CoreCompileInputs.cache
+E:\Apps\Repos\lptstr\sultan\sllib\obj\ghfdf\netstandard2.0\sllib.AssemblyInfoInputs.cache
+E:\Apps\Repos\lptstr\sultan\sllib\obj\ghfdf\netstandard2.0\sllib.AssemblyInfo.cs
+E:\Apps\Repos\lptstr\sultan\sllib\obj\ghfdf\netstandard2.0\sllib.dll
+E:\Apps\Repos\lptstr\sultan\sllib\obj\ghfdf\netstandard2.0\sllib.pdb

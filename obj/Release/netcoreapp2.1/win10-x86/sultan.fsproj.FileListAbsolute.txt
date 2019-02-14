@@ -1,0 +1,16 @@
+E:\Apps\Repos\lptstr\sultan\bin\Release\netcoreapp2.1\win10-x86\hostpolicy.dll
+E:\Apps\Repos\lptstr\sultan\bin\Release\netcoreapp2.1\win10-x86\hostfxr.dll
+E:\Apps\Repos\lptstr\sultan\bin\Release\netcoreapp2.1\win10-x86\sultan.exe
+E:\Apps\Repos\lptstr\sultan\bin\Release\netcoreapp2.1\win10-x86\sultan.deps.json
+E:\Apps\Repos\lptstr\sultan\bin\Release\netcoreapp2.1\win10-x86\sultan.runtimeconfig.json
+E:\Apps\Repos\lptstr\sultan\bin\Release\netcoreapp2.1\win10-x86\sultan.runtimeconfig.dev.json
+E:\Apps\Repos\lptstr\sultan\bin\Release\netcoreapp2.1\win10-x86\sultan.dll
+E:\Apps\Repos\lptstr\sultan\bin\Release\netcoreapp2.1\win10-x86\sultan.pdb
+E:\Apps\Repos\lptstr\sultan\bin\Release\netcoreapp2.1\win10-x86\sllib.dll
+E:\Apps\Repos\lptstr\sultan\bin\Release\netcoreapp2.1\win10-x86\sllib.pdb
+E:\Apps\Repos\lptstr\sultan\obj\Release\netcoreapp2.1\win10-x86\sultan.fsprojAssemblyReference.cache
+E:\Apps\Repos\lptstr\sultan\obj\Release\netcoreapp2.1\win10-x86\sultan.AssemblyInfoInputs.cache
+E:\Apps\Repos\lptstr\sultan\obj\Release\netcoreapp2.1\win10-x86\sultan.AssemblyInfo.fs
+E:\Apps\Repos\lptstr\sultan\obj\Release\netcoreapp2.1\win10-x86\sultan.fsproj.CopyComplete
+E:\Apps\Repos\lptstr\sultan\obj\Release\netcoreapp2.1\win10-x86\sultan.dll
+E:\Apps\Repos\lptstr\sultan\obj\Release\netcoreapp2.1\win10-x86\sultan.pdb

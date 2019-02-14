@@ -1,0 +1,13 @@
+E:\Apps\Repos\lptstr\sultan\obj\Debug\netcoreapp2.1\sultan.fsprojAssemblyReference.cache
+E:\Apps\Repos\lptstr\sultan\obj\Debug\netcoreapp2.1\sultan.AssemblyInfoInputs.cache
+E:\Apps\Repos\lptstr\sultan\obj\Debug\netcoreapp2.1\sultan.AssemblyInfo.fs
+E:\Apps\Repos\lptstr\sultan\bin\Debug\netcoreapp2.1\sultan.deps.json
+E:\Apps\Repos\lptstr\sultan\bin\Debug\netcoreapp2.1\sultan.runtimeconfig.json
+E:\Apps\Repos\lptstr\sultan\bin\Debug\netcoreapp2.1\sultan.runtimeconfig.dev.json
+E:\Apps\Repos\lptstr\sultan\bin\Debug\netcoreapp2.1\sultan.dll
+E:\Apps\Repos\lptstr\sultan\bin\Debug\netcoreapp2.1\sultan.pdb
+E:\Apps\Repos\lptstr\sultan\bin\Debug\netcoreapp2.1\sllib.dll
+E:\Apps\Repos\lptstr\sultan\bin\Debug\netcoreapp2.1\sllib.pdb
+E:\Apps\Repos\lptstr\sultan\obj\Debug\netcoreapp2.1\sultan.fsproj.CopyComplete
+E:\Apps\Repos\lptstr\sultan\obj\Debug\netcoreapp2.1\sultan.dll
+E:\Apps\Repos\lptstr\sultan\obj\Debug\netcoreapp2.1\sultan.pdb

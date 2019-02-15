@@ -14,3 +14,5 @@ E:\Apps\Repos\lptstr\sultan\obj\Release\netcoreapp2.1\win10-x86\sultan.AssemblyI
 E:\Apps\Repos\lptstr\sultan\obj\Release\netcoreapp2.1\win10-x86\sultan.fsproj.CopyComplete
 E:\Apps\Repos\lptstr\sultan\obj\Release\netcoreapp2.1\win10-x86\sultan.dll
 E:\Apps\Repos\lptstr\sultan\obj\Release\netcoreapp2.1\win10-x86\sultan.pdb
+E:\Apps\Repos\LPTSTR\sultan\bin\Release\netcoreapp2.1\win10-x86\socklib.dll
+E:\Apps\Repos\LPTSTR\sultan\bin\Release\netcoreapp2.1\win10-x86\socklib.pdb

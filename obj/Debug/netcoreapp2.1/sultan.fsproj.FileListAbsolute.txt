@@ -11,3 +11,5 @@ E:\Apps\Repos\lptstr\sultan\bin\Debug\netcoreapp2.1\sllib.pdb
 E:\Apps\Repos\lptstr\sultan\obj\Debug\netcoreapp2.1\sultan.fsproj.CopyComplete
 E:\Apps\Repos\lptstr\sultan\obj\Debug\netcoreapp2.1\sultan.dll
 E:\Apps\Repos\lptstr\sultan\obj\Debug\netcoreapp2.1\sultan.pdb
+E:\Apps\Repos\LPTSTR\sultan\bin\Debug\netcoreapp2.1\socklib.dll
+E:\Apps\Repos\LPTSTR\sultan\bin\Debug\netcoreapp2.1\socklib.pdb

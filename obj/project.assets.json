@@ -270,6 +270,16 @@
         "runtime": {
           "bin/placeholder/sllib.dll": {}
         }
+      },
+      "socklib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/socklib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/socklib.dll": {}
+        }
       }
     },
     ".NETCoreApp,Version=v2.1/win10-x86": {
@@ -791,6 +801,16 @@
         },
         "runtime": {
           "bin/placeholder/sllib.dll": {}
+        }
+      },
+      "socklib/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/socklib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/socklib.dll": {}
         }
       }
     }
@@ -1578,13 +1598,19 @@
       "type": "project",
       "path": "lib/sllib/sllib.csproj",
       "msbuildProject": "lib/sllib/sllib.csproj"
+    },
+    "socklib/1.0.0": {
+      "type": "project",
+      "path": "lib/socklib/socklib.csproj",
+      "msbuildProject": "lib/socklib/socklib.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "FSharp.Core >= 4.5.2",
       "Microsoft.NETCore.App >= 2.1.2",
-      "sllib >= 1.0.0"
+      "sllib >= 1.0.0",
+      "socklib >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1594,11 +1620,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Apps\\Repos\\lptstr\\sultan\\sultan.fsproj",
+      "projectUniqueName": "E:\\Apps\\Repos\\LPTSTR\\sultan\\sultan.fsproj",
       "projectName": "sultan",
-      "projectPath": "E:\\Apps\\Repos\\lptstr\\sultan\\sultan.fsproj",
+      "projectPath": "E:\\Apps\\Repos\\LPTSTR\\sultan\\sultan.fsproj",
       "packagesPath": "C:\\Users\\elija\\.nuget\\packages\\",
-      "outputPath": "E:\\Apps\\Repos\\lptstr\\sultan\\obj\\",
+      "outputPath": "E:\\Apps\\Repos\\LPTSTR\\sultan\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1615,8 +1641,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\Apps\\Repos\\lptstr\\sultan\\lib\\sllib\\sllib.csproj": {
-              "projectPath": "E:\\Apps\\Repos\\lptstr\\sultan\\lib\\sllib\\sllib.csproj"
+            "E:\\Apps\\Repos\\LPTSTR\\sultan\\lib\\sllib\\sllib.csproj": {
+              "projectPath": "E:\\Apps\\Repos\\LPTSTR\\sultan\\lib\\sllib\\sllib.csproj"
+            },
+            "E:\\Apps\\Repos\\LPTSTR\\sultan\\lib\\socklib\\socklib.csproj": {
+              "projectPath": "E:\\Apps\\Repos\\LPTSTR\\sultan\\lib\\socklib\\socklib.csproj"
             }
           }
         }

@@ -1,3 +1,5 @@
+#nowarn "20"
+
 open sultan
 
 open System

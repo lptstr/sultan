@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="libexec\httpflood.py" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="lib\sllib\sllib.csproj" />
     <ProjectReference Include="lib\socklib\socklib.csproj" />
   </ItemGroup>

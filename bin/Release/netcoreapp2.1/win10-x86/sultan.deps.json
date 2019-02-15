@@ -11,7 +11,8 @@
         "dependencies": {
           "FSharp.Core": "4.5.2",
           "Microsoft.NETCore.App": "2.1.2",
-          "sllib": "1.0.0"
+          "sllib": "1.0.0",
+          "socklib": "1.0.0"
         },
         "runtime": {
           "sultan.dll": {}
@@ -928,6 +929,11 @@
         "runtime": {
           "sllib.dll": {}
         }
+      },
+      "socklib/1.0.0": {
+        "runtime": {
+          "socklib.dll": {}
+        }
       }
     }
   },
@@ -1022,6 +1028,11 @@
       "hashPath": "runtime.win-x86.microsoft.netcore.dotnethostresolver.2.1.2.nupkg.sha512"
     },
     "sllib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "socklib/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

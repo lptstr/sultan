@@ -1,0 +1,9 @@
+E:\Apps\Repos\LPTSTR\sultan\lib\socklib\bin\Release\netstandard2.0\socklib.deps.json
+E:\Apps\Repos\LPTSTR\sultan\lib\socklib\bin\Release\netstandard2.0\socklib.dll
+E:\Apps\Repos\LPTSTR\sultan\lib\socklib\bin\Release\netstandard2.0\socklib.pdb
+E:\Apps\Repos\LPTSTR\sultan\lib\socklib\obj\Release\netstandard2.0\socklib.csprojAssemblyReference.cache
+E:\Apps\Repos\LPTSTR\sultan\lib\socklib\obj\Release\netstandard2.0\socklib.csproj.CoreCompileInputs.cache
+E:\Apps\Repos\LPTSTR\sultan\lib\socklib\obj\Release\netstandard2.0\socklib.AssemblyInfoInputs.cache
+E:\Apps\Repos\LPTSTR\sultan\lib\socklib\obj\Release\netstandard2.0\socklib.AssemblyInfo.cs
+E:\Apps\Repos\LPTSTR\sultan\lib\socklib\obj\Release\netstandard2.0\socklib.dll
+E:\Apps\Repos\LPTSTR\sultan\lib\socklib\obj\Release\netstandard2.0\socklib.pdb

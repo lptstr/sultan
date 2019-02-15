@@ -208,11 +208,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Apps\\Repos\\lptstr\\sultan\\lib\\sllib\\sllib.csproj",
+      "projectUniqueName": "E:\\Apps\\Repos\\LPTSTR\\sultan\\lib\\sllib\\sllib.csproj",
       "projectName": "sllib",
-      "projectPath": "E:\\Apps\\Repos\\lptstr\\sultan\\lib\\sllib\\sllib.csproj",
+      "projectPath": "E:\\Apps\\Repos\\LPTSTR\\sultan\\lib\\sllib\\sllib.csproj",
       "packagesPath": "C:\\Users\\elija\\.nuget\\packages\\",
-      "outputPath": "E:\\Apps\\Repos\\lptstr\\sultan\\lib\\sllib\\obj\\",
+      "outputPath": "E:\\Apps\\Repos\\LPTSTR\\sultan\\lib\\sllib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

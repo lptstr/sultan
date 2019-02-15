@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="lib\sllib\sllib.csproj" />
+    <ProjectReference Include="lib\socklib\socklib.csproj" />
   </ItemGroup>
 
 </Project>

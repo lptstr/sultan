@@ -8,6 +8,7 @@
   <ItemGroup>
     <Compile Include="lib\consoletool.fs" />
     <Compile Include="lib\printxlib.fs" />
+    <Compile Include="lib\xerxeslib.fs" />
     <Compile Include="main.fs" />
   </ItemGroup>
 

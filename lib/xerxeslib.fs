@@ -25,7 +25,7 @@ module xerxeslib =
         let g : int = 1
         let r : int = 0
         while true do
-            for x = 0 to sockets.Length do
+            for x = 0 to sockets.Count do
                 sockets.[x] = socketutil.connect(host, port)
                 let request : byte array = Encoding.ASCII.GetBytes (nil)
                 let currentsocket : Socket = sockets.[x]

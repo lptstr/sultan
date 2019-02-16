@@ -10,6 +10,7 @@ open System.IO
 open System.Net
 open System.Text
 open System.Net.Sockets
+open System.Collections.Generic
 
 module xerxeslib =
     let nil : string = string (char 0x00)

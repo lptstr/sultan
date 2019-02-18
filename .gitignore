@@ -103,9 +103,7 @@ Package.StoreAssociation.xml
 _pkginfo.txt
 *.appx
 
-*.[Cc]ache
-
-!?*.[Cc]ache/
+*.cache
 
 *.exe
 *.dll

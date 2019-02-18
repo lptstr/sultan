@@ -42,7 +42,7 @@ module sultan =
 
 
     let help =
-        printfn "sultan v0.2.3"
+        printfn "sultan v0.2.6"
         printfn "MIT (c) Kied Llaentenn\n"
         printfn "Usage: .\sultan slowloris [host] [port] [socket_count]"
         printfn "Usage: .\sultan xerxes [host] [port (default: 80)]"

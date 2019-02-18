@@ -18,7 +18,7 @@ namespace socklib
             // get host information
             entry = Dns.GetHostEntry(host);
             foreach (IPAddress address in entry.AddressList) {
-                Console.WriteLine("[sultan] verb attempting connection -> " + address.ToString() + ":" + pport.ToString() + "\n");
+                Console.WriteLine("[sultan] verb attempting connection -> " + address.ToString() + ":" + pport.ToString());
                 IPEndPoint ipe = new IPEndPoint(address, pport);
                 Socket tmpsocket = new Socket(ipe.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
                 tmpsocket.Connect(ipe);
@@ -29,7 +29,7 @@ namespace socklib
                     continue;
                 }
             }
-            Console.WriteLine("[sultan] verb connected -> " + host + ":" + pport.ToString() + "\n");
+            Console.WriteLine("[sultan] verb connected -> " + host + ":" + pport.ToString());
             return socks;
         }
     }

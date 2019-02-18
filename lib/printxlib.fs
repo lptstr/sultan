@@ -18,12 +18,12 @@ module printxlib =
 
     let error (text : string) =
         consoletool.enableVTMode() |> ignore
-        let message : string = "err! " + text
+        let message : string = "ERR! " + text
         eprintf "[sultan] %s[38;2;255;0;0m%s%s[0m" E message E
 
     let warning (text : string) =
         consoletool.enableVTMode() |> ignore
-        let message : string = "warn " + text
+        let message : string = "WARN " + text
         printf "[sultan] %s[38;2;249;225;100m%s%s[0m" E message E
 
     let success (text : string) =
@@ -33,5 +33,5 @@ module printxlib =
 
     let verbose (text : string) =
         consoletool.enableVTMode() |> ignore
-        let message : string = "verb " + text
+        let message : string = "VERB " + text
         printf "[sultan] %s[38;2;50;190;250m%s%s[0m" E message E

@@ -89,7 +89,7 @@
     "FSharp.Core/4.5.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-apbdQOjzsjQ637kTWQuW29jqwY18jsHMyNC5A+TPJZKFEIE2cIfQWf3V7+mXrxlbX69BueYkv293/g70wuXuRw==",
+      "sha512": "sha512-Pe3EDp9oBjQ3c3fvZAJsw7XFLHECS3zn3P7MSqsJy3sFYR6jvTgxxnCFeePR1JHiWyZ3bm+RZAjchqVYk61adA==",
       "path": "fsharp.core/4.5.2",
       "hashPath": "fsharp.core.4.5.2.nupkg.sha512"
     },

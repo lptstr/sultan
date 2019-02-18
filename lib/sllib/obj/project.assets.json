@@ -27,7 +27,7 @@
         }
       }
     },
-    ".NETStandard,Version=v2.0/win10-x86": {
+    ".NETStandard,Version=v2.0/osx.10.13-x64": {
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -255,7 +255,7 @@
       }
     },
     "runtimes": {
-      "win10-x86": {
+      "osx.10.13-x64": {
         "#import": []
       }
     }

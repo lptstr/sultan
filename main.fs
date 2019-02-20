@@ -27,7 +27,7 @@ module sultan =
              exit 1
              else verbose "starting...\n"
 
-         xerxeslib.attack args.[1] (Int32.Parse(args.[2])) 1 (Int32.Parse(args.[3]))
+         xerxeslib.attack args.[1] (Int32.Parse(args.[2])) 1 (Int32.Parse(args.[3])) (Int32.Parse(args.[4]))
          Thread.Sleep(Timeout.Infinite);
          0
 

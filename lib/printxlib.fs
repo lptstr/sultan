@@ -33,4 +33,4 @@ module printxlib =
 
     let verbose (text : string) =
         consoletool.enableVTMode() |> ignore
-        printfn "[sultan->mainth] %s[38;2;50;190;250mVERB %s[38;2;255;255;255m%s%s[0m" E E text E
+        Console.WriteLine "[sultan->mainth] {0}[38;2;50;190;250mVERB {0}[38;2;255;255;255m{1}{0}[0m" E text

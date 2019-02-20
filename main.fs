@@ -26,7 +26,7 @@ module sultan =
          if args.Length < 2 then
              errorfn "200 Target host not provided. Aborting."
              exit 1
-             else verbose "starting...\n"
+             else verbose "starting..."
 
          xerxeslib.attack args.[1] (Int32.Parse(args.[2])) 1 (Int32.Parse(args.[3])) (Int32.Parse(args.[4]))
          Thread.Sleep(Timeout.Infinite);
@@ -36,15 +36,17 @@ module sultan =
         if args.Length < 2 then
                 errorfn "300 Target host or IP not provided. Aborting."
                 exit 1
-                else verbose "starting...\n"
+                else verbose "starting..."
         pinglib.attackp 1 args.[1]
         0
 
 
     let help =
+        let year = System.Int32.Parse(System.DateTime.Now.ToString("yyyy"))
         printfn "sultan v0.3.0"
-        printfn "MIT (c) Kied Llaentenn\n"
-        printfn "Usage: .\sultan slowloris [host] [port] [socket_count]"
+        printfn "MIT (c) %i LPTSTR members" year
+        printf "\n"
+        printfn "Usage: .\sultan slowloris [host] [port] [socket_count] [useSSL? (true|false)]"
         printfn "Usage: .\sultan xerxes [host] [port] [connections] [threads]"
         printfn "Usage: .\sultan deathping [host]"
         printf "\n"

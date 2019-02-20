@@ -46,6 +46,7 @@ module sultan =
         printfn "Usage: .\sultan slowloris [host] [port] [socket_count]"
         printfn "Usage: .\sultan xerxes [host] [port] [connections] [threads]"
         printfn "Usage: .\sultan deathping [host]"
+        printf "\n"
 
     [<EntryPoint>]
     let main argv =

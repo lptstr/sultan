@@ -26,7 +26,7 @@ namespace socklib
                     tmpsocket.Connect(ipe);
                 } catch (Exception err) {
                     // Console.WriteLine("[socutl] {0}[38;2;230;100;100mBUG! {0}[38;2;255;255;255m500 internal error -> {1}", E, err.Message);
-                    Console.WriteLine("[sultan->socutl] {0}[38;2;255;0;0mERR! {0}[38;2;255;255;255m500 error {1} -> {2} {0}[0m", E, err.HResult, err.Message);
+                    Console.WriteLine("[sultan->socutl] {0}[38;2;255;0;0mERR! {0}[38;2;255;255;255m{1:X8} -> {2} {0}[0m", E, err.HResult, err.Message);
                 }
 
                 if (tmpsocket.Connected) {

@@ -11,6 +11,7 @@
     <Compile Include="lib\xerxeslib.fs" />
     <Compile Include="lib\pinglib.fs" />
     <Compile Include="lib\stringlib.fs" />
+    <Compile Include="lib\getargs.fs" />
     <Compile Include="main.fs" />
   </ItemGroup>
 

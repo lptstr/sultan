@@ -59,3 +59,8 @@ ipch/
 *.dll
 *.so
 *.cache
+*.props
+
+lib/sllib/obj/project.assets.json
+lib/socklib/obj/project.assets.json
+

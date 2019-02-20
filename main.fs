@@ -44,7 +44,7 @@ module sultan =
         printfn "sultan v0.2.6"
         printfn "MIT (c) Kied Llaentenn\n"
         printfn "Usage: .\sultan slowloris [host] [port] [socket_count]"
-        printfn "Usage: .\sultan xerxes [host] [port] [connections]"
+        printfn "Usage: .\sultan xerxes [host] [port] [connections] [threads]"
         printfn "Usage: .\sultan deathping [host]"
 
     [<EntryPoint>]

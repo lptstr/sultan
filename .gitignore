@@ -6,40 +6,12 @@ dist/
 *.userosscache
 *.sln.docstates
 
-*.userprefs
-
-# Build results
-debug/
-[Dd]ebugPublic/
-release/
-releases/
-x64/
-x86/
-
-bin/
-obj/
+bin/*
+obj/*
 
 
 .vs/
 
-Generated\ Files/
-
-[Tt]est[Rr]esult*/
-[Bb]uild[Ll]og.*
-
-# NUNIT
-*.VisualState.xml
-TestResult.xml
-
-# Build Results of an ATL Project
-[Dd]ebugPS/
-[Rr]eleasePS/
-dlldata.c
-
-# StyleCop
-StyleCopReport.xml
-
-# Files built by Visual Studio
 *_i.c
 *_p.c
 *_h.h
@@ -68,10 +40,6 @@ StyleCopReport.xml
 *.svclog
 *.scc
 
-# Chutzpah Test files
-_Chutzpah*
-
-# Visual C++ cache files
 ipch/
 *.aps
 *.ncb
@@ -82,29 +50,12 @@ ipch/
 *.VC.db
 *.VC.VC.opendb
 
-# Visual Studio profiler
 *.psess
 *.vsp
 *.vspx
 *.sap
 
-# Installshield output folder
-[Ee]xpress/
-
-# NuGet Packages
-*.nupkg
-# The packages folder can be ignored because of Package Restore
-**/[Pp]ackages/*
-# except build/, which is used as an MSBuild target.
-!**/[Pp]ackages/build/
-AppPackages/
-BundleArtifacts/
-Package.StoreAssociation.xml
-_pkginfo.txt
-*.appx
-
-*.cache
-
 *.exe
 *.dll
 *.so
+*.cache

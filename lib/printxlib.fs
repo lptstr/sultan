@@ -16,7 +16,7 @@ module printxlib =
             let b = parsedrgb.[2]
             printf "%s[38;2;%s;%s;%sm%s%s[0m" E r g b text E
 
-    let error (text : string) =
+    let errorfn (text : string) =
         consoletool.enableVTMode() |> ignore
         eprintfn "[sultan->mainth] %s[38;2;255;0;0mERR! %s[38;2;255;255;255m%s%s[0m" E E text E
 

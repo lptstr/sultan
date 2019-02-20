@@ -66,8 +66,7 @@ module sultan =
             elif (argv.[0]).Equals("xerxes") then invoke_xerxes argv
             elif (argv.[0]).Equals("deathping") then invoke_pod argv else 0
         with
-            | err -> 
-                errorfn ( String.Format("0x{0:X8} EXCEPTION -> {1}", err.HResult, err.Message))
+            | :? System.Exception as err ->
+                errorfn ( String.Format("0x{0:X8} {2} {3} -> {1}", err.HResult, err.Message, err.TargetSite, (((err.GetType()).ToString()).ToUpper())))
                 0
         0
-

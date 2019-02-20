@@ -9,8 +9,8 @@ open socklib
 
 open System
 open System.IO
-open System.Net
 open System.Text
+open System.Threading
 open System.Net.Sockets
 open System.Collections.Generic
 

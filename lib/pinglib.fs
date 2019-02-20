@@ -21,5 +21,5 @@ module pinglib =
 
         let timeout : int = 120
         pingSender.SendAsync(host, 10000000, buffer, options) |> ignore
-        verbose ("pinged -> " + host + " " + (nth.ToString()) + " times\n")
+        verbose ("pinged -> " + host + " " + (nth.ToString()) + " times")
         attackp (nth + 1) host

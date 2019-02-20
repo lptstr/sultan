@@ -1,4 +1,5 @@
 #nowarn "20"
+#nowarn "67"
 
 open sultan
 open sultan.printxlib

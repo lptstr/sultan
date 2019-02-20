@@ -51,7 +51,7 @@ module sultan =
     [<EntryPoint>]
     let main argv =
         consoletool.enableVTMode() |> ignore
-        // go nuts if there aren't enough args
+        // go nuts if there aren't enough args'
         if argv.Length < 1 then
             help
             error "001 Not enough arguments. Aborting."

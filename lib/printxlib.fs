@@ -21,7 +21,7 @@ module printxlib =
 
     let errorfn (text : string) =
         consoletool.enableVTMode() |> ignore
-        erwrite.WriteLine "[sultan->mainth] {0}[38;2;255;0;0mERR! {0}[38;2;255;255;255m{1}{0}[0m" E text
+        erwrite.WriteLine("[sultan->mainth] {0}[38;2;255;0;0mERR! {0}[38;2;255;255;255m{1}{0}[0m", E, text)
 
     let warn (text : string) =
         consoletool.enableVTMode() |> ignore
@@ -33,4 +33,4 @@ module printxlib =
 
     let verbose (text : string) =
         consoletool.enableVTMode() |> ignore
-        Console.WriteLine "[sultan->mainth] {0}[38;2;50;190;250mVERB {0}[38;2;255;255;255m{1}{0}[0m" E text
+        Console.WriteLine("[sultan->mainth] {0}[38;2;50;190;250mVERB {0}[38;2;255;255;255m{1}{0}[0m", E, text)

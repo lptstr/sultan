@@ -10,7 +10,7 @@ param (
 if ($Run) {
 	dotnet publish -c Release --self-contained true -r win10-x86
 } elseif ($Build) {
-	dotnet build
+	dotnet build --no-dependencies
 } else {
 	dotnet build
 }

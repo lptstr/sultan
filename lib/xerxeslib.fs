@@ -26,13 +26,21 @@ module xerxeslib =
         // The party starts right here
         try
             r <- socket.Send(request)
-            None
+            0
         with
             | :? System.Net.Sockets.SocketException as err ->
-                error ("The established socket [" + index.ToString() + "] was aborted by the host machine's software.")
-                socket.Close()
-                socket = socketutil.connect(host, port)
-                None
+                 errorfn ("The established socket [" + index.ToString() + "] was aborted by the host machine's software.")
+                 socket.Close
+                 socket = socketutil.connect(host, port)
+                 0
+            | :? System.ObjectDisposedException as err1 ->
+                 warn (String.Format("0x{0:X8} socket is disposed, creating new socket.", err1.HResult))
+                 socket.Close
+                 socket = socketutil.connect(host, port)
+                 0
+            | :? System.Exception as err2 ->
+                 errorfn (String.Format("0x{0:X8} EXCEPTION! -> {1}", err2.HResult, err2.Message))
+                 0
 
         if r = -1 then
             socket.Close()

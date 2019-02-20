@@ -27,7 +27,7 @@ namespace sultan
             for (int i = 0; i < count; i++)
             {
                 var conn = new LorisConnection(ip, port, useSsl);
-                conn.SendHeaders("Sultan/1.0 (Swodniw TN 3.6) Okceg/20100101 Airfox/0.36 ME_ELEMENTSYS The Legion of the Dancing Bears");
+                conn.SendHeaders("Sultan/0.3.0 (SLLLIB 2.0) LPTSTR/20100101 Airfox/0.36 ME_ELEMENTSYS The Legion of the Desperate Programmers");
                 connections.Add(conn);
             }
         }

@@ -36,7 +36,12 @@ namespace socklib
                     continue;
                 }
             }
-            Console.WriteLine("[sultan->socutl] {0}[38;2;10;220;10mYAY! {0}[38;2;255;255;255mconnected -> " + host + ":" + pport.ToString() + "{0}[0m", E);
+
+            if (socks.Connected) {
+                Console.WriteLine("[sultan->socutl] {0}[38;2;10;220;10mYAY! {0}[38;2;255;255;255mconnected -> " + host + ":" + pport.ToString() + "{0}[0m", E);
+            } else {
+                Console.WriteLine("[sultan->socutl] {0}[38;2;255;0;0mERR! {0}[38;2;255;255;255mnot connected -> " + host + ":" + pport.ToString() + "{0}[0m", E);
+            }
             return socks;
         }
     }

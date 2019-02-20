@@ -13,7 +13,7 @@ module sultan =
     let E : string = string (char 0x1B)
     let invoke_slowloris (args : string[]) =
         if args.Length < 2 then
-                error "100 Target host not provided. Aborting."
+                errorfn "100 Target host not provided. Aborting."
                 exit 1
                 else verbose "starting...\n"
         let weapon = new sllib()
@@ -23,7 +23,7 @@ module sultan =
 
     let invoke_xerxes (args : string[]) =
          if args.Length < 2 then
-             error "200 Target host not provided. Aborting."
+             errorfn "200 Target host not provided. Aborting."
              exit 1
              else verbose "starting...\n"
 
@@ -33,7 +33,7 @@ module sultan =
 
     let invoke_pod (args : string array) =
         if args.Length < 2 then
-                error "300 Target host or IP not provided. Aborting."
+                errorfn "300 Target host or IP not provided. Aborting."
                 exit 1
                 else verbose "starting...\n"
         pinglib.attackp 1 args.[1]
@@ -54,7 +54,7 @@ module sultan =
         // go nuts if there aren't enough args'
         if argv.Length < 1 then
             help
-            error "001 Not enough arguments. Aborting."
+            errorfn "001 Not enough arguments. Aborting."
             exit 1
         else
 

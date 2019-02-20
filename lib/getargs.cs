@@ -16,9 +16,9 @@ open System
 open System.Collections.Generic
 
 module getargs =
-     let parse (argv : string array) (shortopts : string) (longopts : string array) {
-         let opts = @{}
-         let rem : List<string> 
+     let parse (argv : string array) (shortopts : string) (longopts : string array) =
+         let opts : Hashtable = new HashTable()
+         let rem : List<string> = new List<string>()
      
          function err($msg) {
              $opts, $rem, $msg
@@ -28,13 +28,9 @@ module getargs =
              return [regex]::escape($str)
          }
      
-         # ensure these are arrays
-         $argv = @($argv)
-         $longopts = @($longopts)
-     
-         for($i = 0; $i -lt $argv.length; $i++) {
-             $arg = $argv[$i]
-             if($null -eq $arg) { continue }
+         for i = 0 to argv.length do
+             let arg = argv.[i]
+             if ($null -eq $arg) { continue }
              # don't try to parse array arguments
              if($arg -is [array]) { $rem += ,$arg; continue }
              if($arg -is [int]) { $rem += $arg; continue }

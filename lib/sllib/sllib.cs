@@ -10,10 +10,12 @@ namespace sultan
     public class sllib
     {
         private List<LorisConnection> connections;
+        private int timeout;
 
-        public sllib()
+        public sllib(int waittime)
         {
             connections = new List<LorisConnection>();
+            timeout = waittime;
             new Thread(() => keepAliveThread()).Start();
         }
 
@@ -23,7 +25,7 @@ namespace sultan
             Console.WriteLine("[sultan->slllib] VERB Port -> " + port.ToString());
             Console.WriteLine("[sultan->slllib] VERB Using SSL -> " + useSsl.ToString());
             Console.WriteLine("[sultan->slllib] VERB Count -> " + count.ToString());
-            Console.WriteLine("[sultan->slllib] VERB initialize connections for {0} sockets", count);
+            Console.WriteLine("[sultan->slllib] VERB initializing connections for {0} sockets", count);
             for (int i = 0; i < count; i++)
             {
                 var conn = new LorisConnection(ip, port, useSsl);
@@ -48,7 +50,7 @@ namespace sultan
                         connections[i] = new LorisConnection(connections[i].IP, connections[i].Port, connections[i].UsingSsl);
                     }
                 }
-                Thread.Sleep(10000);
+                Thread.Sleep(timeout);
             }
         }
     }

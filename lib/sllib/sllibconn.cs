@@ -7,7 +7,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace sultan
 {
-    public class LorisConnection
+    public class LorisConnection : IDisposable
     {
         private static Random rnd = new Random();
 
@@ -16,6 +16,8 @@ namespace sultan
         public bool UsingSsl { get; private set; }
 
         private StreamWriter writer;
+        private TcpClient client;
+        private SslStream ssl;
 
         public LorisConnection(string ip, int port, bool useSsl)
         {
@@ -23,10 +25,10 @@ namespace sultan
             Port = port;
             UsingSsl = useSsl;
 
-            TcpClient client = new TcpClient(ip, port);
+            client = new TcpClient(ip, port);
             if (UsingSsl)
             {
-                SslStream ssl = new SslStream(client.GetStream(), false, new RemoteCertificateValidationCallback(ValidateCert));
+                ssl = new SslStream(client.GetStream(), false, new RemoteCertificateValidationCallback(ValidateCert));
                 writer = new StreamWriter(ssl);
             }
             else {
@@ -41,10 +43,17 @@ namespace sultan
             writer.WriteLine(string.Format("{0}\r\n", userAgent));
             writer.WriteLine("Accept-language: en-US,en,q=0.5\r\n");
         }
+        
+        public void Dispose()
+        {
+            this.ssl.Dispose();
+            this.writer.Dispose(true);
+            this.client.Dispose();
+        }
 
         public void KeepAlive()
         {
-            writer.WriteLine(string.Format("X-a: {0}\r\n", rnd.Next(1, 5000)));
+            writer.WriteLine(string.Format("X-a: {0}\r\n", rnd.Next(5000, 9000)));
         }
 
         public static bool ValidateCert(object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)

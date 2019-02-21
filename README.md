@@ -1,6 +1,7 @@
 # sultan [![Build status](https://ci.appveyor.com/api/projects/status/xhyyn53we4o20t3c?svg=true)](https://ci.appveyor.com/project/Kiedtl/sultan) ![GitHub All Releases](https://img.shields.io/github/downloads/lptstr/sultan/total.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/41f5a32b2d63424c9681c62ab6cdb752)](https://www.codacy.com/app/lptstr/sultan?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lptstr/sultan&amp;utm_campaign=Badge_Grade) ![GitHub](https://img.shields.io/github/license/lptstr/sultan.svg)
 
 A tool to stress-test your server.
+Sultan makes it easy to 'attack' your server to see how resiliant it would be should a malicious hacker try to DDOS your server.
 
 ## Installation ![GitHub release](https://img.shields.io/github/release/lptstr/sultan.svg)
 Check the releases for the latest release, and download the appropriate `.zip` file for your platform. Then, add the `bin/Release/netcoreapp2.1/<platform>-<arch>/sultan(.exe)` file to your PATH.

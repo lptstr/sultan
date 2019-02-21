@@ -3,8 +3,7 @@
 A tool to stress-test your server.
 Sultan makes it easy to 'attack' your server to see how resiliant it would be should a malicious hacker try to DDOS your server.
 
-## Installation ![GitHub release](https://img.shields.io/github/release/lptstr/sultan.svg) ![GitHub All Releases](https://img.shields.io/github/downloads/lptstr/sultan/total.svg) 
-Check the releases for the latest release, and download the appropriate `.zip` file for your platform. Then, add the `bin/Release/netcoreapp2.1/<platform>-<arch>/sultan(.exe)` file to your PATH.
+Like this project? ![Say thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)
 
 ## Usage
 Sultan provides three attack methods as of v0.3.0: XerXes, SlowLoris, and DeathPing.
@@ -58,6 +57,9 @@ To attack a server called `ctepr`, try
 ```
 sultan deathping "ctepr"
 ```
+
+## Installation ![GitHub release](https://img.shields.io/github/release/lptstr/sultan.svg) ![GitHub All Releases](https://img.shields.io/github/downloads/lptstr/sultan/total.svg) 
+Check the releases for the latest release, and download the appropriate `.zip` file for your platform. Then, add the `bin/Release/netcoreapp2.1/<platform>-<arch>/sultan(.exe)` file to your PATH.
 
 ## License
 - MIT License

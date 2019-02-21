@@ -19,4 +19,8 @@
     <ProjectReference Include="lib\socklib\socklib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser.FSharp" Version="2.4.3" />
+  </ItemGroup>
+
 </Project>

@@ -9,8 +9,8 @@ namespace sultan
 {
     public class sllib
     {
-        private List<LorisConnection> connections;
-        private int timeout;
+        private readonly List<LorisConnection> connections;
+        private readonly int timeout;
 
         public sllib(int waittime)
         {

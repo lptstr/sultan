@@ -6,7 +6,7 @@ using System.Net.Sockets;
 
 namespace socklib
 {
-    public class socketutil
+    public static class socketutil
     {
         public static Socket connect(string host, int pport) {
             Socket socks = null;

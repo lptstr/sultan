@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-### Unreleased
+## Unreleased
 <details>
 <summary>Features</summary>
 <ul>
@@ -17,7 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 </details>
 
 
-### Orhan (v0.3.0) 2019-02-20
+## Orhan (v0.3.0) 2019-02-20
 <details>
 <summary>Features</summary>
 <ul>
@@ -45,7 +45,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 </details>
 <br>
 
-### OSSMan 1 (v0.2.6) 2019-02-18
+## OSSMan 1 (v0.2.6) 2019-02-18
 First release.
 <details>
 <summary>New Features</summary>

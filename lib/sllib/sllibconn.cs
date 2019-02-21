@@ -29,8 +29,9 @@ namespace sultan
                 SslStream ssl = new SslStream(client.GetStream(), false, new RemoteCertificateValidationCallback(ValidateCert));
                 writer = new StreamWriter(ssl);
             }
-            else
+            else {
                 writer = new StreamWriter(client.GetStream());
+            }
             writer.AutoFlush = true;
         }
 

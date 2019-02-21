@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+### [Unreleased]
+<details>
+<summary>Features</summary>
+<ul>
+<li>Ability to control time waited between sending <code>keep-alive</code> headers in slowloris</li>
+<li>An entirely new command-line interface with support for flags and options.</li> 
+</ul>
+</details>
+
+
 ### Orhan (v0.3.0) [2019-02-20] 
 <details>
 <summary>Features</summary>

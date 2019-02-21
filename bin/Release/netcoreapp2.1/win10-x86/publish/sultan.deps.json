@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1/win10-x86",
-    "signature": "63138299c1e85fe0623e826bbc30fab711a4348b"
+    "signature": "c8a6ffead3cd8c1d3977145067e1f300adf7beb4"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,6 +9,7 @@
     ".NETCoreApp,Version=v2.1/win10-x86": {
       "sultan/1.0.0": {
         "dependencies": {
+          "CommandLineParser.FSharp": "2.4.3",
           "FSharp.Core": "4.5.2",
           "Microsoft.NETCore.App": "2.1.2",
           "sllib": "1.0.0",
@@ -16,6 +17,17 @@
         },
         "runtime": {
           "sultan.dll": {}
+        }
+      },
+      "CommandLineParser.FSharp/2.4.3": {
+        "dependencies": {
+          "FSharp.Core": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/CommandLine.dll": {
+            "assemblyVersion": "2.4.3.0",
+            "fileVersion": "2.4.3.0"
+          }
         }
       },
       "FSharp.Core/4.5.2": {
@@ -942,6 +954,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "CommandLineParser.FSharp/2.4.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yN8iqUeTvVNIzHLcDAbZJ2Uw00lWH9695Ky5SNAkq176r2S0dwxJQ3lx71sRTIN0/ye0p1+YEz5+e8Qnr8cU3Q==",
+      "path": "commandlineparser.fsharp/2.4.3",
+      "hashPath": "commandlineparser.fsharp.2.4.3.nupkg.sha512"
     },
     "FSharp.Core/4.5.2": {
       "type": "package",

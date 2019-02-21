@@ -16,7 +16,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 </ul>
 </details>
 
-
 ## Orhan (v0.3.0) 2019-02-20
 <details>
 <summary>Features</summary>

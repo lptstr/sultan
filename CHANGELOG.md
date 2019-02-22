@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## Unreleased
+## MuRad 1 (v0.4.0) 2019-02-22
 <details>
 <summary>Features</summary>
 <ul>

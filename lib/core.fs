@@ -8,6 +8,6 @@ module core =
     let getversion : int[] =
         [|
             0
-            3
+            4
             0
         |]

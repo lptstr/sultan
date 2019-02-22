@@ -47,7 +47,7 @@ namespace sultan
         public void Dispose()
         {
             this.ssl.Dispose();
-            this.writer.Dispose(true);
+            this.writer.Dispose();
             this.client.Dispose();
         }
 

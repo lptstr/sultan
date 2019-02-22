@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "e0509391da2245525a18bb368b6ef618b75880cc"
+    "signature": "9ae07d0259b7a76c963c001b50bfd2cd8ccb069e"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,6 +10,7 @@
         "dependencies": {
           "CommandLineParser.FSharp": "2.4.3",
           "FSharp.Core": "4.5.2",
+          "OpenCover": "4.7.922",
           "sllib": "1.0.0",
           "socklib": "1.0.0"
         },
@@ -80,6 +81,7 @@
           }
         }
       },
+      "OpenCover/4.7.922": {},
       "sllib/1.0.0": {
         "runtime": {
           "sllib.dll": {}
@@ -111,6 +113,13 @@
       "sha512": "sha512-Pe3EDp9oBjQ3c3fvZAJsw7XFLHECS3zn3P7MSqsJy3sFYR6jvTgxxnCFeePR1JHiWyZ3bm+RZAjchqVYk61adA==",
       "path": "fsharp.core/4.5.2",
       "hashPath": "fsharp.core.4.5.2.nupkg.sha512"
+    },
+    "OpenCover/4.7.922": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xSKddEQ4O5Uom3CHXU0q9ioEJ34YyOZsizpnzRNp57nU3JpOd9cBLimwaZ2FvP9be+bYfrzSu562EbU9LfKfaA==",
+      "path": "opencover/4.7.922",
+      "hashPath": "opencover.4.7.922.nupkg.sha512"
     },
     "sllib/1.0.0": {
       "type": "project",

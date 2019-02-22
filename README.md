@@ -68,7 +68,30 @@ sultan deathping --host "ctepr"
 ```
 
 ## Installation ![GitHub release](https://img.shields.io/github/release/lptstr/sultan.svg) ![GitHub All Releases](https://img.shields.io/github/downloads/lptstr/sultan/total.svg) 
-Check the releases for the latest release, and download the appropriate `.zip` file for your platform. Then, add the `bin/Release/netcoreapp2.1/<platform>-<arch>/sultan(.exe)` file to your PATH.
+
+<details>
+    <summary>Windows</summary>
+    <ul>
+        <li>
+            Try using <a href="https://scoop.sh">Scoop.</a><br>
+            <div class="highlight highlight-source-shell">
+                <pre>
+                    scoop bucket add lptstr https://github.com/lptstr/lptstr-scoop
+                    scoop install sultan
+                </pre>
+            </div>
+        </li>
+    </ul>
+</details>
+
+<details>
+    <summary>Windows</summary>
+    <ul>
+        <li>
+            Check the releases for the latest release, and download the appropriate <code>.zip</code> file for your platform. Then, add the <code>bin/Release/netcoreapp2.1/<platform>-<arch>/sultan(.exe)</code> file to your PATH.
+        </li>
+    </ul>
+</details>
 
 ## License
   - MIT License

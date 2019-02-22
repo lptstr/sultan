@@ -70,7 +70,7 @@ sultan deathping --host "ctepr"
 ## Installation ![GitHub release](https://img.shields.io/github/release/lptstr/sultan.svg) ![GitHub All Releases](https://img.shields.io/github/downloads/lptstr/sultan/total.svg) 
 
 <details>
-    <summary>Windows</summary>
+    <summary>macOS / Linux</summary>
     <ul>
         <li>
             Try using <a href="https://scoop.sh">Scoop.</a><br>

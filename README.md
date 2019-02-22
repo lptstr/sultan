@@ -6,13 +6,13 @@ Sultan makes it easy to 'attack' your server to see how resiliant it would be sh
 Like this project? ![Say thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)
 
 ## Usage
-Sultan provides three attack methods as of v0.3.0: XerXes, SlowLoris, and DeathPing.
+Sultan provides three attack methods as of v0.4.0: XerXes, SlowLoris, and DeathPing.
 
 Basic syntax:
 ```bash
-Usage: .\sultan slowloris [host] [port] [socket_count] [useSSL? (true|false)]
-Usage: .\sultan xerxes [host] [port] [connections] [threads]
-Usage: .\sultan deathping [host]
+Usage: .\sultan slowloris [options]
+Usage: .\sultan xerxes [options]
+Usage: .\sultan deathping [options]
 ```
 
 ### XerXes
@@ -20,12 +20,16 @@ Ths attack mimicks the so-called XerXes DOS code online - by creating hundreds o
 
 #### Syntax 
 ```bash
-sultan xerxes "your_server" <port> <connections> <threads>
+sultan xerxes [options]
+    -d, --host            <server>
+    -p, --port            <port>
+    -c, --connections     <connections>
+    -t, --threads         <threads>
 ```
 
 For example, to attack the malware site `gmil.com` on port 80 with 8 connections and 4 threads, run the following:
 ```bash
-sultan xerxes "gmil.com" 80 8 4
+sultan xerxes -d 'gmil.com' -p 80 -t 4 -c 8
 ```
 
 Sultan will connect 8 sockets first and start the attack. After about 15 seconds, another thread will be created and *another 8 sockets allocated*. This process will be repeated until the maximum number of threads has been reached.
@@ -39,23 +43,28 @@ It works by creating thousands of connections to the target server and keeping t
 
 #### Syntax
 ```bash
-sultan slowloris "your_server" <port> <sockets> <ssl>
+sultan slowloris "your_server" <port> <sockets> <timeout> <ssl>
+    -d, --host            <server>
+    -p, --port            <port>
+    -c, --connections     <connections>
+    -t, --timeout         <timeout in ms.>
+    -s, --ssl             <use ssl? true|false>
 ```
 
-For example, to attack yourself on port 80 with 10,000 sockets with SSL, try
+For example, to attack yourself on port 80 with 10,000 sockets with SSL and with a timeout of 120 s., try
 ```bash
-sultan slowloris localhost 80 10000 true
+sultan slowloris -d localhost -p 80 -s true -c 10000 -t 120000
 ```
 If the SSL is not provided or is not a valid Boolean value, Sultan defaults to FALSE.
 
 ### Ping of Death
 #### Syntax
 ```bash
-sultan deathping <host>
+sultan deathping [-d|--host] <host>
 ```
 To attack a server called `ctepr`, try
 ```bash
-sultan deathping "ctepr"
+sultan deathping --host "ctepr"
 ```
 
 ## Installation ![GitHub release](https://img.shields.io/github/release/lptstr/sultan.svg) ![GitHub All Releases](https://img.shields.io/github/downloads/lptstr/sultan/total.svg) 

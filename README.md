@@ -70,7 +70,7 @@ sultan deathping --host "ctepr"
 ## Installation ![GitHub release](https://img.shields.io/github/release/lptstr/sultan.svg) ![GitHub All Releases](https://img.shields.io/github/downloads/lptstr/sultan/total.svg) 
 
 <details>
-    <summary>Windows 10</summary>
+    <summary><bold>Windows 10</bold></summary>
     <ul>
         <li>
             Try using <a href="https://scoop.sh">Scoop.</a><br>
@@ -85,7 +85,7 @@ sultan deathping --host "ctepr"
 </details>
 
 <details>
-    <summary>Linux / macOS</summary>
+    <summary><bold>Linux / macOS</bold></summary>
     <ul>
         <li>
             Check the releases for the latest release, and download the appropriate <code>.zip</code> file for your platform. Then, add the <code>bin/Release/netcoreapp2.1/<platform>-<arch>/sultan(.exe)</code> file to your PATH.

@@ -3,7 +3,7 @@
 A tool to stress-test your server.
 Sultan makes it easy to 'attack' your server to see how resiliant it would be should a malicious hacker try to DDOS your server.
 
-Like this project? ![Say thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)
+Like this project? [![Say thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/Kiedtl)
 
 ## Usage
 Sultan provides three attack methods as of v0.4.0: XerXes, SlowLoris, and DeathPing.
